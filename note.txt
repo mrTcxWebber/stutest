@@ -1,4 +1,5 @@
-﻿database.js链接数据库，或在models文件夹中定义并返回collection集合表
+﻿1
+database.js链接数据库，或在models文件夹中定义并返回collection集合表
 在router下面的路由文件中调用操作
 
 Document文档(非常类似于关系型数据库管理系统中的行)
