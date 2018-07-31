@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+      <h1>成绩查询<a href="/edit" style="padding-left:50px;">去录入</a></h1>
+      <table>
+        <thead>
+          <tr>
+            <th>姓名</th>
+            <th>语文</th>
+            <th>英语</th>
+            <th>数学</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% if(user.length){ %>
+          <% for(var i=0,len=user.length;i<len;i++){ %>
+          <tr data-id="<%= user[i]._id %>">
+            <td><%= user[i].username %></td>
+            <td><%= user[i].chinese %></td>
+            <td><%= user[i].english %></td>
+            <td><%= user[i].math %></td>
+          </tr>
+          <% } %>
+          <% }else{ %>
+            <tr><td><P>还没有录入</P></td></tr>
+          <% } %>
+        </tbody>
+      </table>
+  </body>
+</html>

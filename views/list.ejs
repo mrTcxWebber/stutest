@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+        <h1>成绩录入</h1>
+        <form action="/edit" method="post">
+          <div class="m-f-list"><span>姓名</span><input type="text" name="username"></div>
+          <div class="m-f-list"><span>语文</span><input type="text" name="chinese"></div>
+          <div class="m-f-list"><span>英语</span><input type="text" name="english"></div>
+          <div class="m-f-list"><span>数学</span><input type="text" name="math"></div>
+          <div class="m-f-list"><input type="submit" value="提交"></div>
+        </form>
+  </body>
+</html>
